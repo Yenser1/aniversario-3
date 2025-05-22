@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url(/public/Fonts/Sacramento-Regular.ttf);
+}
+@font-face {
+    font-family: 'AlfaSlabOne';
+    src: url(/public/Fonts/AlfaSlabOne-Regular.ttf);
+}
