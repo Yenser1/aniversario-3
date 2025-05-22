@@ -13,7 +13,7 @@ import valentine from "/public/Audios/Laufey - Valentine.mp3"
         <span class="text-black relative cursor-grab selection:text-black">😻</span>
     </h1>
 </div>
-<div class="mensajito absolute top-1/2 -translate-y-1/2 flex  bg-emerald-800 rounded-4xl justify-center p-2.5 sm:w-1/2 md:w-1/3">
+<div class="mensajito  absolute top-1/2 -translate-y-1/2 flex  bg-emerald-800 rounded-4xl justify-center p-2.5 sm:w-1/2 md:w-1/3 hidden">
     <p class="pop-up self-center text-center font-bold text-white sm:[3vw] md:text-[1vw]">
         Hola mi amor!, te mereces algo mucho mas elaborado que esto, pero solamente quiero dedicarte algo bonito
         aunque no tenga mucho tiempo, quiero decirte que realmente te amo mucho y no se como ya han pasado 3 años
@@ -45,4 +45,7 @@ import valentine from "/public/Audios/Laufey - Valentine.mp3"
 </style>
 <script is:inline>
     const mensajito = document.querySelector(".mensajito")
+    document.addEventListener("dblclick", (e) => {
+        mensajito.classList.toggle("hidden")
+    })
 </script>
